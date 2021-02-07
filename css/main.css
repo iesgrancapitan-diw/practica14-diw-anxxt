@@ -42,11 +42,13 @@ header nav ul li a {
   text-decoration: none;
 }
 
-main {
-  min-height: 100vh;
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #6441A5;
 }
 
-footer {
-  height: 12vh;
-  background-color: #6441A5;
+footer img {
+  width: 40px;
+  margin: 15px;
 }
