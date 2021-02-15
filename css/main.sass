@@ -1,5 +1,6 @@
 $primary-color: #F5F5F5
 $secondary-color: #F75454
+$secondary-color-dark: #BE172B
 $primary-text-color: #FFFFFF
 $secondary-text-color: #000000
 
@@ -47,7 +48,32 @@ header
           font-size: 1.3rem
           color: $primary-text-color
           text-decoration: none
-.hide
-  display: none
-.show
-  display: block
+div#footerBar
+  height: 8px
+  background-color: $secondary-color-dark
+footer
+  display: flex
+  flex-direction: column
+  background-color: $secondary-color
+  color: $primary-text-color
+  padding: 15px
+  h2
+    font-size: 1.2rem
+  div
+    img
+      width: 25px
+    a
+      text-decoration: none
+      color: $primary-text-color
+  div#socialNetworks
+    img
+      margin: 8px
+  div#contact
+    display: flex
+    flex-direction: column
+    a
+      padding: 6px
+      display: flex
+      align-items: center
+      span
+        margin-left: 10px

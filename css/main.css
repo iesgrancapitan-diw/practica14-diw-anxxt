@@ -39,10 +39,47 @@ header nav ul li a {
   text-decoration: none;
 }
 
-.hide {
-  display: none;
+div#footerBar {
+  height: 8px;
+  background-color: #BE172B;
 }
 
-.show {
-  display: block;
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #F75454;
+  color: #FFFFFF;
+  padding: 15px;
+}
+
+footer h2 {
+  font-size: 1.2rem;
+}
+
+footer div img {
+  width: 25px;
+}
+
+footer div a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+footer div#socialNetworks img {
+  margin: 8px;
+}
+
+footer div#contact {
+  display: flex;
+  flex-direction: column;
+}
+
+footer div#contact a {
+  padding: 6px;
+  display: flex;
+  align-items: center;
+}
+
+footer div#contact a span {
+  margin-left: 10px;
 }
