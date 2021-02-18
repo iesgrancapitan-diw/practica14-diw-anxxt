@@ -1,6 +1,7 @@
-$primary-color: #F5F5F5
+$primary-color: #F2F5F5
 $secondary-color: #F75454
 $secondary-color-dark: #BE172B
+$secondary-color-light: #FF8781
 $primary-text-color: #FFFFFF
 $secondary-text-color: #000000
 
@@ -8,6 +9,7 @@ $secondary-text-color: #000000
   margin: 0
   padding: 0
   box-sizing: border-box
+  scroll-behavior: smooth;
 body
   font-family: Roboto
   font-size: 16px
@@ -22,13 +24,12 @@ header
     img
       width: 100px
   nav
+    margin-top: 5px
     ul
       display: flex
+      justify-content: space-around
       list-style: none
       li
-        position: relative
-        padding: 10px
-        text-align: center
         // Para cuando sea para pc
         // &:before
         //   position: absolute
@@ -45,12 +46,10 @@ header
         //     width: 100%
         //     left: 0
         a
-          font-size: 1.3rem
           color: $primary-text-color
           text-decoration: none
-div#footerBar
-  height: 6px
-  background-color: $secondary-color-dark
+main
+  min-height: 100vh // prueba
 footer
   display: flex
   flex-direction: column
@@ -77,3 +76,6 @@ footer
       align-items: center
       span
         margin-left: 10px
+#footerSvg
+  position: relative
+  top: 5px

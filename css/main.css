@@ -2,12 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: Roboto;
   font-size: 16px;
-  background-color: #F5F5F5;
+  background-color: #F2F5F5;
 }
 
 header {
@@ -22,26 +23,23 @@ header a img {
   width: 100px;
 }
 
+header nav {
+  margin-top: 5px;
+}
+
 header nav ul {
   display: flex;
+  justify-content: space-around;
   list-style: none;
 }
 
-header nav ul li {
-  position: relative;
-  padding: 10px;
-  text-align: center;
-}
-
 header nav ul li a {
-  font-size: 1.3rem;
   color: #FFFFFF;
   text-decoration: none;
 }
 
-div#footerBar {
-  height: 6px;
-  background-color: #BE172B;
+main {
+  min-height: 100vh;
 }
 
 footer {
@@ -82,4 +80,9 @@ footer div#contact a {
 
 footer div#contact a span {
   margin-left: 10px;
+}
+
+#footerSvg {
+  position: relative;
+  top: 5px;
 }
