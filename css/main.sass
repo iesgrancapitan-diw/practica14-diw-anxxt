@@ -3,19 +3,19 @@ $secondary-color: #F75454
 $secondary-color-dark: #BE172B
 $secondary-color-light: #FF8781
 $primary-text-color: #FFFFFF
-%div-properties
-  min-height: 100vh
-  display: flex
-  flex-direction: column
-  align-items: center
-  justify-content: center
 @mixin tablet
   @media only screen and (min-width: 600px)
     @content
 @mixin desktop
   @media only screen and (min-width: 1024px)
     @content
-
+%div-properties
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  
 *
   margin: 0
   padding: 0
@@ -36,11 +36,8 @@ header
     img
       width: 100px
       @include tablet
-        width: 160px
-      @include desktop
-        width: 200px
+        width: 130px
   nav
-    margin-top: 10px
     ul
       display: flex
       justify-content: space-around

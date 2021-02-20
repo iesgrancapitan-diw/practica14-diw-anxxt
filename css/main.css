@@ -34,18 +34,8 @@ header a img {
 
 @media only screen and (min-width: 600px) {
   header a img {
-    width: 160px;
+    width: 130px;
   }
-}
-
-@media only screen and (min-width: 1024px) {
-  header a img {
-    width: 200px;
-  }
-}
-
-header nav {
-  margin-top: 10px;
 }
 
 header nav ul {
