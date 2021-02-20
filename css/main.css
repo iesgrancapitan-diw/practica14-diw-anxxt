@@ -318,3 +318,9 @@ footer div#contact a span {
   position: relative;
   bottom: 40px;
 }
+
+@media only screen and (min-width: 600px) {
+  #footerSvg {
+    bottom: 50px;
+  }
+}
