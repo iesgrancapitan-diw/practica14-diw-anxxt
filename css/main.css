@@ -1,3 +1,11 @@
+main #home, main #skills, main #portfolio, main #about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -43,14 +51,6 @@ header nav ul li a:hover {
   color: #dbdbdb;
 }
 
-main #home {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 main #home span {
   margin: 10px;
   font-size: 2.3rem;
@@ -67,11 +67,6 @@ main #home img {
 }
 
 main #skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
   background-color: #F75454;
   color: #FFFFFF;
 }
@@ -103,12 +98,7 @@ main #skills .container {
 }
 
 main #portfolio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 20px;
-  min-height: 100vh;
 }
 
 main #portfolio h2 {
@@ -151,7 +141,6 @@ main #portfolio .project a:hover {
 }
 
 main #about {
-  min-height: 100vh;
   background-color: #F75454;
 }
 

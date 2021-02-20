@@ -3,6 +3,12 @@ $secondary-color: #F75454
 $secondary-color-dark: #BE172B
 $secondary-color-light: #FF8781
 $primary-text-color: #FFFFFF
+%div-properties
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
 
 *
   margin: 0
@@ -37,11 +43,7 @@ header
             color: #dbdbdb
 main
   #home
-    min-height: 100vh
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
+    @extend %div-properties
     span
       margin: 10px
       font-size: 2.3rem
@@ -54,11 +56,7 @@ main
       left: 20px
       width: 50vw
   #skills
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-    min-height: 100vh
+    @extend %div-properties
     background-color: $secondary-color
     color: $primary-text-color
     h2
@@ -80,12 +78,8 @@ main
       justify-items: center
       grid-gap: 15px
   #portfolio
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
+    @extend %div-properties
     padding: 20px
-    min-height: 100vh
     h2
       padding-top: 50px
       margin-bottom: 20px
@@ -115,7 +109,7 @@ main
           color: #dbdbdb
           
   #about
-    min-height: 100vh
+    @extend %div-properties
     background-color: $secondary-color
 footer
   display: flex
