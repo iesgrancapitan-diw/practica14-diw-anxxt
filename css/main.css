@@ -103,7 +103,42 @@ main #skills .container {
 }
 
 main #portfolio {
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+main #portfolio .project {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  border-radius: 20px;
+  background-color: #F75454;
+  margin: 15px;
+}
+
+main #portfolio .project img {
+  width: 100%;
+  height: 150px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+main #portfolio .project h2, main #portfolio .project p {
+  color: #FFFFFF;
+  margin: 15px;
+}
+
+main #portfolio .project a {
+  color: #FFFFFF;
+  margin: 15px;
+  align-self: flex-end;
+}
+
+main #portfolio .project a:hover {
+  color: #dbdbdb;
 }
 
 main #about {

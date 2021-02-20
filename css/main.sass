@@ -79,9 +79,34 @@ main
       grid-template-columns: repeat(3, 1fr)
       justify-items: center
       grid-gap: 15px
-
   #portfolio
-    min-height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 20px
+    .project
+      display: flex
+      flex-direction: column
+      width: 80%
+      border-radius: 20px
+      background-color: $secondary-color
+      margin: 15px
+      img
+        width: 100%
+        height: 150px
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      h2, p
+        color: $primary-text-color
+        margin: 15px
+      a
+        color: $primary-text-color
+        margin: 15px
+        align-self: flex-end
+        &:hover
+          color: #dbdbdb
+          
   #about
     min-height: 100vh
     background-color: $secondary-color
