@@ -3,7 +3,6 @@ $secondary-color: #F75454
 $secondary-color-dark: #BE172B
 $secondary-color-light: #FF8781
 $primary-text-color: #FFFFFF
-$secondary-text-color: #000000
 
 *
   margin: 0
@@ -34,10 +33,10 @@ header
           color: $primary-text-color
           text-decoration: none
           &:hover
-            color: #C5C5C5
+            color: #dbdbdb
 main
   #home
-    min-height: 80vh
+    min-height: 90vh
     display: flex
     flex-direction: column
     align-items: center
@@ -55,12 +54,13 @@ main
       width: 50vw
       z-index: -1
   #skills
-    min-height: 80vh
-    background-color: $secondary-color  
+    min-height: 90vh
+    background-color: $secondary-color
+
   #portfolio
-    min-height: 80vh
+    min-height: 90vh
   #about
-    min-height: 80vh
+    min-height: 90vh
     background-color: $secondary-color
 footer
   display: flex
@@ -68,10 +68,10 @@ footer
   color: $secondary-color
   padding: 15px
   h2
-    font-size: 1.2rem
+    font-size: 1.3rem
   div
     img
-      width: 25px
+      width: 30px
       &:hover
         transform: scale(1.1)
         transition: all 0.1s ease-in-out
@@ -90,6 +90,7 @@ footer
       align-items: center
       span
         margin-left: 10px
+        font-size: 1.1rem
 #footerSvg
   position: relative
   bottom: 40px
