@@ -83,8 +83,7 @@ main #about {
 footer {
   display: flex;
   flex-direction: column;
-  background-color: #F75454;
-  color: #FFFFFF;
+  color: #F75454;
   padding: 15px;
 }
 
@@ -103,7 +102,7 @@ footer div img:hover {
 
 footer div a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #F75454;
 }
 
 footer div#socialNetworks img {
@@ -127,5 +126,5 @@ footer div#contact a span {
 
 #footerSvg {
   position: relative;
-  top: 5px;
+  bottom: 40px;
 }
