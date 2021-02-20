@@ -30,26 +30,33 @@ header
       justify-content: space-around
       list-style: none
       li
-        // Para cuando sea para pc
-        // &:before
-        //   position: absolute
-        //   bottom: 0
-        //   content: ""
-        //   display: block
-        //   width: 0
-        //   height: 2px
-        //   background-color: #fff
-        //   transition: all .3s
-        //   left: 50%
-        // &:hover
-        //   &:before
-        //     width: 100%
-        //     left: 0
         a
           color: $primary-text-color
           text-decoration: none
+          &:hover
+            color: #C5C5C5
 main
-  min-height: 100vh // prueba
+  #home
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    p
+      margin: 10px
+      font-size: 2.3rem
+      text-align: center
+      background: -webkit-linear-gradient($secondary-color-dark, $secondary-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    img
+      position: relative
+      left: 20px
+      width: 50vw
+      z-index: -1
+  #skills
+    min-height: 100vh
+    background-color: $secondary-color  
 footer
   display: flex
   flex-direction: column
@@ -61,6 +68,9 @@ footer
   div
     img
       width: 25px
+      &:hover
+        transform: scale(1.1)
+        transition: all 0.1s ease-in-out
     a
       text-decoration: none
       color: $primary-text-color

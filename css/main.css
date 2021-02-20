@@ -38,8 +38,37 @@ header nav ul li a {
   text-decoration: none;
 }
 
-main {
+header nav ul li a:hover {
+  color: #C5C5C5;
+}
+
+main #home {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main #home p {
+  margin: 10px;
+  font-size: 2.3rem;
+  text-align: center;
+  background: -webkit-linear-gradient(#BE172B, #F75454);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main #home img {
+  position: relative;
+  left: 20px;
+  width: 50vw;
+  z-index: -1;
+}
+
+main #skills {
+  min-height: 100vh;
+  background-color: #F75454;
 }
 
 footer {
@@ -56,6 +85,11 @@ footer h2 {
 
 footer div img {
   width: 25px;
+}
+
+footer div img:hover {
+  transform: scale(1.1);
+  transition: all 0.1s ease-in-out;
 }
 
 footer div a {
