@@ -41,7 +41,7 @@ main
     flex-direction: column
     align-items: center
     justify-content: center
-    p
+    span
       margin: 10px
       font-size: 2.3rem
       text-align: center
@@ -55,7 +55,26 @@ main
       z-index: -1
   #skills
     min-height: 100vh
+    padding: 30px
     background-color: $secondary-color
+    color: $primary-text-color
+    h2
+      margin-bottom: 10px
+      font-size: 2rem
+    .skill
+      display: flex
+      justify-content: center
+      width: 80px
+      height: 80px
+      border-radius: 20px
+      background-color: $primary-color
+      img
+        width: 40px
+    .container
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
+      justify-items: center
+      grid-gap: 15px
 
   #portfolio
     min-height: 100vh

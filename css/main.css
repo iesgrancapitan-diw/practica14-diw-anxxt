@@ -50,7 +50,7 @@ main #home {
   justify-content: center;
 }
 
-main #home p {
+main #home span {
   margin: 10px;
   font-size: 2.3rem;
   text-align: center;
@@ -68,7 +68,34 @@ main #home img {
 
 main #skills {
   min-height: 100vh;
+  padding: 30px;
   background-color: #F75454;
+  color: #FFFFFF;
+}
+
+main #skills h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+main #skills .skill {
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  background-color: #F2F5F5;
+}
+
+main #skills .skill img {
+  width: 40px;
+}
+
+main #skills .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  grid-gap: 15px;
 }
 
 main #portfolio {
