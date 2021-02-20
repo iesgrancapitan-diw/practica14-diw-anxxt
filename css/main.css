@@ -34,7 +34,7 @@ header a img {
 
 @media only screen and (min-width: 600px) {
   header a img {
-    width: 150px;
+    width: 160px;
   }
 }
 
@@ -55,7 +55,7 @@ header nav ul li a {
 
 @media only screen and (min-width: 600px) {
   header nav ul li a {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 
