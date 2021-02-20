@@ -48,7 +48,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: #dbdbdb;
+  color: #DBDBDB;
 }
 
 main #home span {
@@ -137,11 +137,29 @@ main #portfolio .project a {
 }
 
 main #portfolio .project a:hover {
-  color: #dbdbdb;
+  color: #DBDBDB;
 }
 
 main #about {
   background-color: #F75454;
+  color: #FFFFFF;
+}
+
+main #about h2 {
+  padding-top: 50px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+main #about img {
+  width: 50%;
+  border-radius: 100%;
+}
+
+main #about p {
+  font-size: 1.1rem;
+  padding: 20px;
+  width: 75%;
 }
 
 footer {
