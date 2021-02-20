@@ -32,6 +32,12 @@ header a img {
   width: 100px;
 }
 
+@media only screen and (min-width: 600px) {
+  header a img {
+    width: 150px;
+  }
+}
+
 header nav {
   margin-top: 10px;
 }
@@ -47,6 +53,12 @@ header nav ul li a {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 600px) {
+  header nav ul li a {
+    font-size: 1.3rem;
+  }
+}
+
 header nav ul li a:hover {
   color: #DBDBDB;
 }
@@ -60,10 +72,22 @@ main #home span {
   -webkit-text-fill-color: transparent;
 }
 
+@media only screen and (min-width: 600px) {
+  main #home span {
+    font-size: 3rem;
+  }
+}
+
 main #home img {
   position: relative;
   left: 20px;
-  width: 50vw;
+  width: 50%;
+}
+
+@media only screen and (min-width: 600px) {
+  main #home img {
+    left: 40px;
+  }
 }
 
 main #skills {
@@ -71,10 +95,38 @@ main #skills {
   color: #FFFFFF;
 }
 
+@media only screen and (min-width: 600px) {
+  main #skills {
+    display: block;
+  }
+}
+
 main #skills h2 {
   padding-top: 50px;
   margin-bottom: 20px;
   font-size: 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+  main #skills h2 {
+    font-size: 3rem;
+    padding-left: 50px;
+  }
+}
+
+main #skills .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  grid-gap: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+  main #skills .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+  }
 }
 
 main #skills .skill {
@@ -86,15 +138,21 @@ main #skills .skill {
   background-color: #F2F5F5;
 }
 
+@media only screen and (min-width: 600px) {
+  main #skills .skill {
+    width: 120px;
+    height: 120px;
+  }
+}
+
 main #skills .skill img {
   width: 40px;
 }
 
-main #skills .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  grid-gap: 15px;
+@media only screen and (min-width: 600px) {
+  main #skills .skill img {
+    width: 80px;
+  }
 }
 
 main #portfolio {
@@ -108,6 +166,12 @@ main #portfolio h2 {
   color: #F75454;
 }
 
+@media only screen and (min-width: 600px) {
+  main #portfolio h2 {
+    font-size: 3rem;
+  }
+}
+
 main #portfolio .project {
   display: flex;
   flex-direction: column;
@@ -118,6 +182,12 @@ main #portfolio .project {
   box-shadow: 2px 2px 2px 2px rgba(41, 41, 41, 0.25);
 }
 
+@media only screen and (min-width: 600px) {
+  main #portfolio .project {
+    width: 70%;
+  }
+}
+
 main #portfolio .project img {
   width: 100%;
   height: 150px;
@@ -125,9 +195,21 @@ main #portfolio .project img {
   border-top-right-radius: 20px;
 }
 
+@media only screen and (min-width: 600px) {
+  main #portfolio .project img {
+    height: 200px;
+  }
+}
+
 main #portfolio .project h2, main #portfolio .project p {
   color: #FFFFFF;
   margin: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+  main #portfolio .project p, main #portfolio .project a {
+    font-size: 1.3rem;
+  }
 }
 
 main #portfolio .project a {
@@ -151,6 +233,12 @@ main #about h2 {
   font-size: 2rem;
 }
 
+@media only screen and (min-width: 600px) {
+  main #about h2 {
+    font-size: 3rem;
+  }
+}
+
 main #about img {
   width: 50%;
   border-radius: 100%;
@@ -160,6 +248,12 @@ main #about p {
   font-size: 1.1rem;
   padding: 20px;
   width: 75%;
+}
+
+@media only screen and (min-width: 600px) {
+  main #about p {
+    font-size: 1.8rem;
+  }
 }
 
 footer {
@@ -174,8 +268,20 @@ footer h2 {
   font-size: 1.3rem;
 }
 
+@media only screen and (min-width: 600px) {
+  footer h2 {
+    font-size: 2.5rem;
+  }
+}
+
 footer div img {
   width: 35px;
+}
+
+@media only screen and (min-width: 600px) {
+  footer div img {
+    width: 50px;
+  }
 }
 
 footer div img:hover {
@@ -206,6 +312,12 @@ footer div#contact a {
 footer div#contact a span {
   margin-left: 10px;
   font-size: 1.1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  footer div#contact a span {
+    font-size: 1.5rem;
+  }
 }
 
 #footerSvg {

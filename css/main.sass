@@ -9,12 +9,15 @@ $primary-text-color: #FFFFFF
   flex-direction: column
   align-items: center
   justify-content: center
+@mixin tablet
+  @media only screen and (min-width: 600px)
+    @content
 
 *
   margin: 0
   padding: 0
   box-sizing: border-box
-  scroll-behavior: smooth;
+  scroll-behavior: smooth
 body
   font-family: Roboto
   font-size: 16px
@@ -29,6 +32,8 @@ header
   a
     img
       width: 100px
+      @include tablet
+        width: 150px
   nav
     margin-top: 10px
     ul
@@ -39,6 +44,8 @@ header
         a
           color: $primary-text-color
           text-decoration: none
+          @include tablet
+            font-size: 1.3rem
           &:hover
             color: #DBDBDB
 main
@@ -51,18 +58,36 @@ main
       background: -webkit-linear-gradient($secondary-color-dark, $secondary-color);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      @include tablet
+        font-size: 3rem
     img
       position: relative
       left: 20px
-      width: 50vw
+      width: 50%
+      @include tablet
+        left: 40px
   #skills
     @extend %div-properties
     background-color: $secondary-color
     color: $primary-text-color
+    @include tablet
+      display: block
     h2
       padding-top: 50px
       margin-bottom: 20px
       font-size: 2rem
+      @include tablet
+        font-size: 3rem
+        padding-left: 50px
+    .container
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
+      justify-items: center
+      grid-gap: 15px
+      @include tablet
+        display: flex
+        flex-wrap: wrap
+        margin: 50px
     .skill
       display: flex
       justify-content: center
@@ -70,13 +95,13 @@ main
       height: 80px
       border-radius: 20px
       background-color: $primary-color
+      @include tablet
+        width: 120px
+        height: 120px
       img
         width: 40px
-    .container
-      display: grid
-      grid-template-columns: repeat(3, 1fr)
-      justify-items: center
-      grid-gap: 15px
+        @include tablet
+          width: 80px
   #portfolio
     @extend %div-properties
     padding: 20px
@@ -85,6 +110,8 @@ main
       margin-bottom: 20px
       font-size: 2rem
       color: $secondary-color
+      @include tablet
+        font-size: 3rem
     .project
       display: flex
       flex-direction: column
@@ -93,14 +120,21 @@ main
       background-color: $secondary-color
       margin: 15px
       box-shadow: 2px 2px 2px 2px rgba(41,41,41,.25)
+      @include tablet
+        width: 70%
       img
         width: 100%
         height: 150px
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        @include tablet
+          height: 200px
       h2, p
         color: $primary-text-color
         margin: 15px
+      p, a
+        @include tablet
+          font-size: 1.3rem
       a
         color: $primary-text-color
         margin: 15px
@@ -115,6 +149,8 @@ main
       padding-top: 50px
       margin-bottom: 20px
       font-size: 2rem
+      @include tablet
+        font-size: 3rem
     img
       width: 50%
       border-radius: 100%
@@ -122,6 +158,8 @@ main
       font-size: 1.1rem
       padding: 20px
       width: 75%
+      @include tablet
+        font-size: 1.8rem
 footer
   display: flex
   flex-direction: column
@@ -130,9 +168,13 @@ footer
   padding-bottom: 15px
   h2
     font-size: 1.3rem
+    @include tablet
+        font-size: 2.5rem
   div
     img
       width: 35px
+      @include tablet
+        width: 50px
       &:hover
         transform: scale(1.1)
         transition: all 0.1s ease-in-out
@@ -152,6 +194,8 @@ footer
       span
         margin-left: 10px
         font-size: 1.1rem
+        @include tablet
+          font-size: 1.5rem
 #footerSvg
   position: relative
   bottom: 40px
