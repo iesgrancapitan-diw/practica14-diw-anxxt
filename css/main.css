@@ -322,5 +322,6 @@ footer div#contact a span {
 @media only screen and (min-width: 600px) {
   #footerSvg {
     bottom: 50px;
+    height: 70px;
   }
 }
