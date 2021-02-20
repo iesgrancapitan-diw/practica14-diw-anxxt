@@ -84,7 +84,8 @@ footer {
   display: flex;
   flex-direction: column;
   color: #F75454;
-  padding: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
 }
 
 footer h2 {
