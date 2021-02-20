@@ -6,6 +6,12 @@ main #home, main #skills, main #portfolio, main #about {
   justify-content: center;
 }
 
+@media only screen and (min-width: 1024px) {
+  main #home, main #skills, main #portfolio, main #about {
+    min-height: 120vh;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -85,7 +91,7 @@ main #home img {
 
 @media only screen and (min-width: 1024px) {
   main #home img {
-    width: 500px;
+    width: 300px;
   }
 }
 
@@ -106,7 +112,7 @@ main #home span {
 
 @media only screen and (min-width: 1024px) {
   main #home span {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -124,12 +130,6 @@ main #skills h2 {
 @media only screen and (min-width: 600px) {
   main #skills h2 {
     font-size: 3rem;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  main #skills h2 {
-    font-size: 4rem;
   }
 }
 
@@ -159,8 +159,8 @@ main #skills .skill {
 
 @media only screen and (min-width: 600px) {
   main #skills .skill {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
   }
 }
 
@@ -170,7 +170,7 @@ main #skills .skill img {
 
 @media only screen and (min-width: 600px) {
   main #skills .skill img {
-    width: 80px;
+    width: 60px;
   }
 }
 
@@ -179,7 +179,6 @@ main #portfolio {
 }
 
 main #portfolio h2 {
-  padding-top: 50px;
   margin-bottom: 20px;
   font-size: 2rem;
   color: #F75454;
@@ -188,12 +187,6 @@ main #portfolio h2 {
 @media only screen and (min-width: 600px) {
   main #portfolio h2 {
     font-size: 3rem;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  main #portfolio h2 {
-    font-size: 4rem;
   }
 }
 
@@ -221,7 +214,7 @@ main #portfolio .project {
 
 @media only screen and (min-width: 1024px) {
   main #portfolio .project {
-    width: 600px;
+    width: 400px;
   }
 }
 
@@ -239,14 +232,8 @@ main #portfolio .project img {
 }
 
 @media only screen and (min-width: 1024px) {
-  main #portfolio .project img {
-    height: 250px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
   main #portfolio .project h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -258,12 +245,6 @@ main #portfolio .project h2, main #portfolio .project p {
 @media only screen and (min-width: 600px) {
   main #portfolio .project p, main #portfolio .project a {
     font-size: 1.3rem;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  main #portfolio .project p, main #portfolio .project a {
-    font-size: 1.5rem;
   }
 }
 
@@ -294,12 +275,6 @@ main #about h2 {
   }
 }
 
-@media only screen and (min-width: 1024px) {
-  main #about h2 {
-    font-size: 4rem;
-  }
-}
-
 main #about img {
   width: 50%;
   border-radius: 100%;
@@ -307,7 +282,7 @@ main #about img {
 
 @media only screen and (min-width: 1024px) {
   main #about img {
-    width: 500px;
+    width: 300px;
   }
 }
 
@@ -327,7 +302,6 @@ main #about p {
 @media only screen and (min-width: 1024px) {
   main #about p {
     width: 60%;
-    font-size: 2rem;
   }
 }
 
@@ -345,7 +319,7 @@ footer h2 {
 
 @media only screen and (min-width: 600px) {
   footer h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -355,7 +329,7 @@ footer div img {
 
 @media only screen and (min-width: 600px) {
   footer div img {
-    width: 50px;
+    width: 40px;
   }
 }
 
@@ -391,7 +365,7 @@ footer div#contact a span {
 
 @media only screen and (min-width: 600px) {
   footer div#contact a span {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
