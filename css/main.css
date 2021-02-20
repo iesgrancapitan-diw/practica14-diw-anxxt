@@ -108,6 +108,14 @@ main #portfolio {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  min-height: 100vh;
+}
+
+main #portfolio h2 {
+  padding-top: 50px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #F75454;
 }
 
 main #portfolio .project {
