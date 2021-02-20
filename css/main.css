@@ -73,7 +73,7 @@ header nav ul li a {
 
 @media only screen and (min-width: 1024px) {
   header nav ul li a {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -330,6 +330,7 @@ main #about p {
 @media only screen and (min-width: 600px) {
   main #about p {
     font-size: 1.8rem;
+    margin-bottom: 30px;
   }
 }
 
@@ -409,16 +410,9 @@ footer div#contact a span {
   bottom: 40px;
 }
 
-@media only screen and (min-width: 600px) {
-  #footerSvg {
-    bottom: 50px;
-    height: 70px;
-  }
-}
-
 @media only screen and (min-width: 1024px) {
   #footerSvg {
-    bottom: 70px;
+    bottom: 65px;
     height: 100px;
   }
 }
