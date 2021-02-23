@@ -6,12 +6,6 @@ main #home, main #skills, main #portfolio, main #about {
   justify-content: center;
 }
 
-@media only screen and (min-width: 1024px) {
-  main #home, main #skills, main #portfolio, main #about {
-    min-height: 110vh;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -137,6 +131,7 @@ main #skills .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  justify-content: center;
   grid-gap: 15px;
 }
 
@@ -145,6 +140,12 @@ main #skills .container {
     display: flex;
     flex-wrap: wrap;
     margin: 50px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main #skills .container {
+    width: 50%;
   }
 }
 
@@ -208,12 +209,6 @@ main #portfolio .project {
 
 @media only screen and (min-width: 600px) {
   main #portfolio .project {
-    width: 70%;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  main #portfolio .project {
     width: 400px;
   }
 }
@@ -231,7 +226,7 @@ main #portfolio .project img {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 600px) {
   main #portfolio .project h2 {
     font-size: 2rem;
   }
@@ -240,12 +235,6 @@ main #portfolio .project img {
 main #portfolio .project h2, main #portfolio .project p {
   color: #FFFFFF;
   margin: 15px;
-}
-
-@media only screen and (min-width: 600px) {
-  main #portfolio .project p, main #portfolio .project a {
-    font-size: 1.3rem;
-  }
 }
 
 main #portfolio .project a {
@@ -310,7 +299,16 @@ footer {
   flex-direction: column;
   color: #F75454;
   padding-left: 15px;
-  padding-bottom: 15px;
+  padding-right: 15px;
+  margin-bottom: 100px;
+}
+
+@media only screen and (min-width: 1024px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 
 footer h2 {
@@ -327,12 +325,6 @@ footer div img {
   width: 35px;
 }
 
-@media only screen and (min-width: 600px) {
-  footer div img {
-    width: 40px;
-  }
-}
-
 footer div img:hover {
   transform: scale(1.1);
   transition: all 0.1s ease-in-out;
@@ -345,6 +337,11 @@ footer div a {
 
 footer div#socialNetworks img {
   margin: 8px;
+}
+
+footer div#socialNetworks div {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 footer div#contact {
@@ -361,12 +358,6 @@ footer div#contact a {
 footer div#contact a span {
   margin-left: 10px;
   font-size: 1.1rem;
-}
-
-@media only screen and (min-width: 600px) {
-  footer div#contact a span {
-    font-size: 1.3rem;
-  }
 }
 
 #footerSvg {
