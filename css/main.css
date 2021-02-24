@@ -90,7 +90,7 @@ header nav ul {
 
 @media only screen and (min-width: 1024px) {
   header nav ul li {
-    margin: 20px;
+    margin: 15px;
   }
 }
 
@@ -102,12 +102,6 @@ header nav ul li a {
 @media only screen and (min-width: 600px) {
   header nav ul li a {
     font-size: 1.4rem;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  header nav ul li a {
-    font-size: 1.6rem;
   }
 }
 
